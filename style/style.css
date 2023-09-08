@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --color-bg: #F1F0E8;
+    --color-txt: #ADC4CE;
+    --color-highlight: #96B6C5;
+    --color-hover: #EEE0C9; 
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    padding: 1%;
+    background-color: rgba(241, 240, 232, 0.6);
+    border: solid;
+    border-width: 0 0 0.11rem;
+    border-color: var(--color-highlight);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.cabecalho__nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cabecalho__nav__esq {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.cabecalho__nav__dir {
+    width: 50%;
+    display: flex;
+    justify-content:space-evenly;
+    font-family: var(--fonte-primaria);
+    /* font-size: 200px; */
+    /* color: black; */
+}
+
+.cabecalho__nav__dir__item {
+    text-decoration: none;
+    color: var(--color-highlight);
+    font-family: var(--fonte-primaria);
+    /* font-size: 200px; */
+
+}   
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+}
+
+.inicio {
+    padding: 5% 0 0 0;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content__left {
+    width: 50%;
+}
+
+.content__right {
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.foto_giovane {
+    width: auto; 
+    padding: 1rem 0;
+    max-width: 50vh;
+    max-height: 50vh;
+    height: auto; /* Deixe a altura ajustar automaticamente */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; /* Centralize horizontalmente */
+
+}
